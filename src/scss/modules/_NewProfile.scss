@@ -1,0 +1,26 @@
+label {
+  width: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 20px;
+  font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;;
+}
+
+.error {
+  color: $custom-red;
+  position: absolute;
+  bottom: -20px;
+  font-size: $small-font-size;
+}
+
+@media (max-width: 460px) {
+  form .row input {
+    font-size: $small-font-size;
+  }
+}
+
+.profileButton {
+  @extend .controllButton;
+  padding: 20px;
+}

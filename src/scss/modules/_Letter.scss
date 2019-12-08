@@ -1,0 +1,13 @@
+.Letter {
+    padding: 10px;
+    font-size: $m-font-size;
+    font-family: "OpenSansBold", Arial, Helvetica, sans-serif;;
+
+    &:hover {
+      color: $custom-red;
+    }
+  }
+
+  .choosenLetter {
+    color: $custom-red;
+  }

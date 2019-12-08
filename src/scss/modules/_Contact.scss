@@ -1,0 +1,45 @@
+
+.Contact {
+
+  width: 100%;
+
+  min-width: 120px;
+  border: 1px solid;
+  margin: 20px 0;
+  box-shadow: 0 9px 58px -22px #7c7c7c;
+  flex: 1 0 auto;
+
+  @media screen and ($mq-md) {
+    margin: 20px;
+  }
+}
+
+.Name {
+  font-size: $m-font-size;
+  height: auto;
+  width: 100%;
+  background: #21201f;
+  color: #fff;
+  font-family: "OpenSansBold", Arial, Helvetica, sans-serif;
+}
+
+.Email {
+  height: auto;
+  width: 100%;
+  font-size: $s-font-size;
+  color: $light-font-color;
+  font-family: "OpenSansSemiBold";
+}
+
+.Phone {
+  height: auto;
+  width: 100%;
+  font-size: $m-font-size;
+  color: $light-font-color;
+  font-family: "OpenSansSemiBold";
+}
+
+.word-container {
+  word-break: break-word;
+  padding: 10px;
+}

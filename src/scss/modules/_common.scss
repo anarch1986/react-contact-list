@@ -1,0 +1,62 @@
+// Override default variables before the import
+$xs-font-size: 12px;
+$s-font-size: 14px;
+$d-font-size: 16px;
+$m-font-size: 20px;
+$l-font-size: 24px;
+$xl-font-size: 30px;
+
+$mq-sm: 568;
+$mq-md: 768;
+$mq-lg: 992;
+$mq-xl: 1200;
+$mq-xxl: 1921;
+
+$light-font-color: #5d5d5d;
+$custom-red: #FC1C1C;
+// Import Bootstrap and its default variables
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../../assets/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../../assets/fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../../assets/fonts/OpenSans-Regular.ttf");
+}
+
+.clickable {
+  cursor: pointer;
+  transition: all 200ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controllButton {
+  padding-right: 25px;
+  padding-left: 25px;
+  margin: 40px 20px 0 20px;
+
+  &:focus {
+    outline: none;
+    //border-color: none;
+    box-shadow: none;
+  }
+}

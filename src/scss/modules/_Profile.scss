@@ -1,0 +1,40 @@
+.Profile {
+  justify-content: center;
+
+  .profileData {
+    display: flex;
+    align-items: center;
+  }
+
+  .data {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+  }
+
+  .red {
+    color: $custom-red;
+  }
+
+  .label {
+    align-items: center;
+    padding: 8px 10px;
+    font-family: "OpenSansSemiBold", Arial, Helvetica, sans-serif;;
+    color: #a9a9a9;
+    width: 70px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: 40px 20px 0 20px;
+  }
+
+  .btn:focus {
+    border-color: none;
+    outline: none;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,43 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .row {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+
+    input:focus {
+      border-color: none;
+      box-shadow: none;
+    }
+  }
+}
+
+label {
+  width: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 20px;
+  font-family: "OpenSansBold", Arial, Helvetica, sans-serif;;
+  color: $light-font-color;
+}
+
+.error {
+  color: $custom-red;
+  position: absolute;
+  bottom: -20px;
+  font-size: $small-font-size;
+}
+
+@media (max-width: 460px) {
+  form .row input {
+    font-size: $small-font-size;
+  }
+}
