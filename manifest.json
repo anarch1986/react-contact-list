@@ -1,0 +1,9 @@
+{
+  "main.js": "bundle.js",
+  "./index.html": "./index.html",
+  "assets/fonts/OpenSans-Bold.ttf": "assets/fonts/OpenSans-Bold.ttf",
+  "assets/fonts/OpenSans-Regular.ttf": "assets/fonts/OpenSans-Regular.ttf",
+  "assets/fonts/OpenSans-SemiBold.ttf": "assets/fonts/OpenSans-SemiBold.ttf",
+  "assets/vodafone_logo.svg": "assets/vodafone_logo.svg",
+  "favicon.ico": "favicon.ico"
+}
