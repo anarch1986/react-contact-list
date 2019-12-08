@@ -4,14 +4,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.join(__dirname, '/dist'),
+        path: path.join(__dirname, '/build'),
         filename: 'bundle.js'
     },
     plugins: [
         new HtmlWebpackPlugin({
             hash: true,
-            filename: './index.html',
-            title: 'React Contact List'
+            template: "./public/index.html",
+            filename: "./index.html",
+            title: 'React Contact List',
+            favicon: "./public/favicon.ico"
         })
     ],
     module: {
