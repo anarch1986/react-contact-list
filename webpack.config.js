@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -15,6 +16,8 @@ module.exports = {
             title: 'React Contact List',
             favicon: "./public/favicon.ico"
         })
+        ,
+        new ManifestPlugin()
     ],
     module: {
         rules: [
